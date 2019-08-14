@@ -11,8 +11,8 @@ CXXFLAGS += -Wunreachable-code
 
 # CXXFLAGS += -fprofile-arcs -ftest-coverage
 
-CXXFLAGS += -fsanitize=leak,address
-CXXFLAGS += -fno-sanitize-recover=undefined
+CXXFLAGS += -fsanitize=leak,address,undefined
+CXXFLAGS += -fno-sanitize-recover=all
 CXXFLAGS += -fno-omit-frame-pointer
 
 HPP_FILES = $(wildcard *.hpp)
