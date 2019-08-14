@@ -1,6 +1,8 @@
-#ifndef HIKER_INCLUDED
-#define HIKER_INCLUDED
+#ifndef SIGNED_OVERFLOW_INCLUDED
+#define SIGNED_OVERFLOW_INCLUDED
 
-int answer();
+#include <limits.h>
+
+bool additionWillOverflow(int first, int second);
 
 #endif

@@ -1,11 +1,6 @@
-#include "hiker.hpp"
+#include "signed_overflow.hpp"
 
-#include <limits.h>
-
-int answer()
+bool additionWillOverflow(int first, int second)
 {
-    int pos = INT_MAX;
-    int offset = 256;
-    int new_pos = pos + offset; // Signed Integer Overflow
-    return new_pos;
+    return first + second < 0;
 }
