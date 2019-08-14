@@ -1,11 +1,11 @@
 
 {
-  "display_name": "Undefined Behavior & Compiler Optimizations",
+  "display_name": "Signed Integer Overflow",
 
   "visible_filenames": [
-    "hiker.tests.cpp",
-    "hiker.cpp",
-    "hiker.hpp",
+    "signed_overflow.tests.cpp",
+    "signed_overflow.cpp",
+    "signed_overflow.hpp",
     "makefile",
     "cyber-dojo.sh"
   ],
