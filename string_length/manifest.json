@@ -1,6 +1,6 @@
 
 {
-  "display_name": "Signed Integer Addition Overflow",
+  "display_name": "Length of C String",
 
   "visible_filenames": [
     "string_length.tests.cpp",
