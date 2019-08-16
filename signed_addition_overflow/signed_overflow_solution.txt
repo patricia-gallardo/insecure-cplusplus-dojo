@@ -11,3 +11,9 @@ bool additionWillOverflow(int first, int second)
         return true;
     return false;
 }
+
+// Fridtun, Dag, TurtleSec
+bool additionWillOverflow(int first, int second){
+   long long f = first, s = second;
+   return s + f > INT_MAX || s + f < INT_MIN;
+}
