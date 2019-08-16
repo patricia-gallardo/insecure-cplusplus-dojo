@@ -1,6 +1,16 @@
 Copyright (c) 2019, [CyberDojo Foundation](http://blog.cyber-dojo.org/2015/08/cyber-dojo-foundation.html)
 All rights reserved.
 
+Covers the following files:
+
+docker/catch_main.cpp
+docker/Dockerfile
+docker/Dockerfile.base
+docker/red_amber_green.rb
+*/cyber-dojo.sh
+*/makefile
+*/manifest.json
+pipe_build_up_test.sh
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
