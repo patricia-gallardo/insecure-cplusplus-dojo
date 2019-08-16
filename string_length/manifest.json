@@ -1,0 +1,20 @@
+
+{
+  "display_name": "Signed Integer Addition Overflow",
+
+  "visible_filenames": [
+    "string_length.tests.cpp",
+    "string_length.cpp",
+    "string_length.hpp",
+    "makefile",
+    "cyber-dojo.sh"
+  ],
+
+  "hidden_filenames": [ ".*\\.gcov", ".*\\.gcno" ],
+
+  "image_name": "cyberdojofoundation/clangpp_catch",
+
+  "max_seconds": 20,
+
+  "filename_extension": [ ".cpp", ".hpp" ]
+}
