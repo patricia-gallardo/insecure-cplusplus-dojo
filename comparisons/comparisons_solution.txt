@@ -1,1 +1,33 @@
 https://cppinsights.io/s/de4d5da4
+
+Examples of relevant warnings:
+
+-Wsign-compare (clang, gcc)
+-Wsign-conversion (clang, gcc)
+-Wconversion (clang, gcc)
+-Wnull-conversion (clang, gcc)
+-Wimplicit-int-conversion (clang)
+-Wliteral-conversion (clang)
+
+TEST_CASE( "Is 1 greater than -1?", "[hhgttg]" )
+{
+    REQUIRE( static_cast<unsigned int>(int(-1))            == std::numeric_limits<unsigned int>::max() );
+
+    REQUIRE( static_cast<unsigned long>(long(-1))          == std::numeric_limits<unsigned long>::max() );
+
+    REQUIRE( static_cast<int>((unsigned short) 1)          == int(1) );
+
+    REQUIRE( static_cast<int>(short(-1))                   == int(-1) );
+
+    REQUIRE( static_cast<long>((unsigned int) 1)           == long(1) );
+
+    REQUIRE( isGreater_ui_i((unsigned int)   1, int(-1))   == false );
+
+    REQUIRE( isGreater_ul_l((unsigned long)  1, long(-1))  == false );
+
+    REQUIRE( isGreater_us_s((unsigned short) 1, short(-1)) == true );
+
+    REQUIRE( isGreater_us_i((unsigned short) 1, int(-1))   == true );
+
+    REQUIRE( isGreater_ui_l((unsigned int)   1, long(-1))  == true );
+}
