@@ -31,3 +31,6 @@ TEST_CASE( "Is 1 greater than -1?", "[hhgttg]" )
 
     REQUIRE( isGreater_ui_l((unsigned int)   1, long(-1))  == true );
 }
+
+https://en.cppreference.com/w/cpp/language/implicit_conversion
+https://en.cppreference.com/w/c/language/conversion
