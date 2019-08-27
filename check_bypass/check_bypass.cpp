@@ -22,10 +22,10 @@ bool bypassedCheckSigned(int first, int second)
 
 bool bypassedCheckTruncated(unsigned int first, unsigned int second)
 {
-    unsigned int max_sum = 256;
-    int sum = (first_len + second_len);
+    int max_sum = 256;
+    int sum = (first + second);
 
-    if((first + second) <= max_sum)
+    if(sum <= max_sum)
       return true;
 
     return false;
