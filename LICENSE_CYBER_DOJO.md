@@ -11,6 +11,7 @@ Covers the following files:
 * */makefile
 * */manifest.json
 * pipe_build_up_test.sh
+* yatzy/*
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
