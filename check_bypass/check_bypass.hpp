@@ -7,4 +7,6 @@ bool bypassedCheckUnsigned(unsigned int first, unsigned int second);
 
 bool bypassedCheckSigned(int first, int second);
 
+bool bypassedCheckTruncated(unsigned int first, unsigned int second);
+
 #endif

@@ -26,3 +26,16 @@ TEST_CASE( "CWE-190: Integer Overflow or Wraparound", "[hhgttg]" )
     //REQUIRE( bypassedCheckSigned(<FIRST>, <SECOND>) );
     // --------------------------------------------
 }
+
+TEST_CASE( "CWE-197: Numeric Truncation Error", "[hhgttg]" )
+{
+    // Truncated : Small enough
+    REQUIRE( bypassedCheckTruncated(42, 42) );
+    // Truncated : Too big
+    REQUIRE( !bypassedCheckTruncated(256, 256) );
+
+    // --------------------------------------------
+    // Truncated : Bypass check
+    //REQUIRE( bypassedCheckTruncated(<FIRST>, <SECOND>) );
+    // --------------------------------------------
+}

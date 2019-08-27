@@ -1,6 +1,6 @@
 
 {
-  "display_name": "CWE-190: Integer Overflow or Wraparound",
+  "display_name": "CWE-190 and CWE-197: Bypassing Checks",
 
   "visible_filenames": [
     "check_bypass.tests.cpp",
