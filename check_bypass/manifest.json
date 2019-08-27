@@ -1,0 +1,20 @@
+
+{
+  "display_name": "CWE-190: Integer Overflow or Wraparound",
+
+  "visible_filenames": [
+    "check_bypass.tests.cpp",
+    "check_bypass.cpp",
+    "check_bypass.hpp",
+    "makefile",
+    "cyber-dojo.sh"
+  ],
+
+  "hidden_filenames": [ ".*\\.gcov", ".*\\.gcno" ],
+
+  "image_name": "cyberdojofoundation/clangpp_catch",
+
+  "max_seconds": 20,
+
+  "filename_extension": [ ".cpp", ".hpp" ]
+}
