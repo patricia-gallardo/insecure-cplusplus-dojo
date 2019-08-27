@@ -13,7 +13,7 @@
 
   "hidden_filenames": [ ".*\\.gcov", ".*\\.gcno" ],
 
-  "image_name": "cyberdojofoundation/clangpp_catch",
+  "image_name": "cyberdojofoundation/gcc_googletest",
 
   "max_seconds": 20,
 
