@@ -4,8 +4,8 @@
 
   "visible_filenames": [
     "yatzy.tests.cpp",
-    "yatzy.cpp",
-    "yatzy.hpp",
+    "yatzy.c",
+    "yatzy.h",
     "makefile",
     "cyber-dojo.sh",
     "readme.txt"
