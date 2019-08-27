@@ -17,5 +17,5 @@
 
   "max_seconds": 20,
 
-  "filename_extension": [ ".c", ".h" ]
+  "filename_extension": [ ".c", ".h", ".cpp" ]
 }
