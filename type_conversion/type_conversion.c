@@ -4,6 +4,6 @@
 
 int * process(int * ptr)
 {
-    int pointer = (intptr_t) ptr;
+    int pointer = (uintptr_t) ptr;
     return (int *) pointer;
 }
