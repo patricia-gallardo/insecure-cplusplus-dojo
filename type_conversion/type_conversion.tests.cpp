@@ -1,0 +1,15 @@
+#include <gtest/gtest.h>
+
+extern "C"
+{
+#include "type_conversion.h"
+}
+
+using namespace ::testing;
+
+TEST(CWE, Incorrect_Type_Conversion)
+{
+    int value = 0;
+    int *ptr = &value;
+    ASSERT_EQ( process(ptr), ptr );
+}
