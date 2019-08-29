@@ -11,9 +11,11 @@ CXXFLAGS += -Wunreachable-code
 
 # CXXFLAGS += -fprofile-arcs -ftest-coverage
 
-CXXFLAGS += -fsanitize=leak,address,undefined
+CXXFLAGS += -fsanitize=leak,undefined
 CXXFLAGS += -fno-sanitize-recover=all
 CXXFLAGS += -fno-omit-frame-pointer
+
+CXXFLAGS += -Wno-implicit-fallthrough
 
 HPP_FILES = $(wildcard *.hpp)
 COMPILED_HPP_FILES = $(patsubst %.hpp,%.compiled_hpp,$(HPP_FILES))
