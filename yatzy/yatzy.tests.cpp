@@ -7,7 +7,7 @@ extern "C"
 
 using namespace ::testing;
 
-TEST(Hiker, Life_the_universe_and_everything)
+TEST(Yatzy, Scoring_throws_in_yatzy_categories)
 {
     ASSERT_EQ(14, answer(Chance, 1,1,3,3,6));
     //ASSERT_EQ(21, answer(Chance, 4,5,5,6,1));
