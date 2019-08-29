@@ -1,0 +1,5 @@
+# Remove warning on implicit fallthrough
+CXXFLAGS += -Wno-implicit-fallthrough
+
+# Add Address Sanitizer
+CXXFLAGS += -fsanitize=leak,address,undefined
