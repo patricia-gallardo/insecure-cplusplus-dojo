@@ -4,7 +4,7 @@
 #include "free_use.hpp"
 #include <catch2/catch.hpp>
 
-TEST_CASE( "Calculating string length", "[hhgttg]" )
+TEST_CASE( "CWE-415 and CWE-416: Free In Error Path", "[hhgttg]" )
 {
     {
         char * buffer = make_buffer(4);

@@ -4,8 +4,11 @@
 #include "comparisons.hpp"
 #include <catch2/catch.hpp>
 
-TEST_CASE( "Is 1 greater than -1?", "[hhgttg]" )
+TEST_CASE( "CWE-704: Unsigned/Signed Comparisons", "[hhgttg]" )
 {
+    // Is 1 greater than -1?
+    // ---------------------
+
     //REQUIRE( static_cast<unsigned int>(int(-1))            == GUESS_FIRST );
 
     //REQUIRE( static_cast<unsigned long>(long(-1))          == GUESS_FIRST );

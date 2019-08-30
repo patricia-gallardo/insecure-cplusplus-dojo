@@ -4,7 +4,7 @@
 #include "string_length.hpp"
 #include <catch2/catch.hpp>
 
-TEST_CASE( "Calculating string length", "[hhgttg]" )
+TEST_CASE( "CWE-121: Access Outside Array Bounds", "[hhgttg]" )
 {
     // Null terminated string
     char str[] = "00112233445566";

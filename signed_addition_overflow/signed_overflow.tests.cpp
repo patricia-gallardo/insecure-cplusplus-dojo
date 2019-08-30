@@ -4,7 +4,7 @@
 #include "signed_overflow.hpp"
 #include <catch2/catch.hpp>
 
-TEST_CASE( "Will addition overflow?", "[hhgttg]" )
+TEST_CASE( "CWE-190: Signed Integer Addition Overflow", "[hhgttg]" )
 {
     REQUIRE( additionWillOverflow(INT_MAX, 256) );
 

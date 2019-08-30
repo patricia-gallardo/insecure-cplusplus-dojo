@@ -7,6 +7,7 @@ extern "C"
 
 using namespace ::testing;
 
+// CWE-704: Incorrect Type Conversion
 TEST(CWE, Incorrect_Type_Conversion)
 {
     int value = 0;
