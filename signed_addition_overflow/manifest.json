@@ -7,7 +7,8 @@
     "signed_overflow.cpp",
     "signed_overflow.hpp",
     "makefile",
-    "cyber-dojo.sh"
+    "cyber-dojo.sh",
+    "readme.txt"
   ],
 
   "hidden_filenames": [ ".*\\.gcov", ".*\\.gcno" ],

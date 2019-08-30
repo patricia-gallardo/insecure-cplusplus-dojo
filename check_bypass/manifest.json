@@ -7,7 +7,8 @@
     "check_bypass.cpp",
     "check_bypass.hpp",
     "makefile",
-    "cyber-dojo.sh"
+    "cyber-dojo.sh",
+    "readme.txt"
   ],
 
   "hidden_filenames": [ ".*\\.gcov", ".*\\.gcno" ],
