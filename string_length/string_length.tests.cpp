@@ -22,3 +22,23 @@ TEST_CASE( "CWE-121: Access Outside Array Bounds", "[hhgttg]" )
     ten[6] = 0;
     REQUIRE( stringLength(10, ten) == 6 );
 }
+
+TEST_CASE( "CWE-122: Write Outside Heap Array Bounds", "[hhgttg]" )
+{
+    // Null terminated string
+    char str[] = "00112233445566";
+
+    {
+      char * copy = copyString(str, 14);
+      REQUIRE( strnlen(copy, 14) == 14 );
+      free(copy);
+    }
+
+    {
+      // String not terminated
+      str[14] = 42;
+      char * copy = copyString(str, 14);
+      REQUIRE( strnlen(copy, 14) == 14 );
+      free(copy);
+    }
+}

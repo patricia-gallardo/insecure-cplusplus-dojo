@@ -1,6 +1,6 @@
 
 {
-  "display_name": "CWE-121: Access Outside Array Bounds",
+  "display_name": "CWE-121 and CWE-122: Array Bounds",
 
   "visible_filenames": [
     "string_length.tests.cpp",
