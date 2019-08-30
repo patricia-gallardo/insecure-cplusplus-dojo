@@ -1,6 +1,6 @@
 
 {
-  "display_name": "Unsigned/Signed Comparisons",
+  "display_name": "CWE-704: Unsigned/Signed Comparisons",
 
   "visible_filenames": [
     "comparisons.tests.cpp",
