@@ -42,3 +42,21 @@ TEST_CASE( "CWE-122: Write Outside Heap Array Bounds", "[hhgttg]" )
       free(copy);
     }
 }
+
+TEST_CASE( "CWE-124: Write Before Array Bounds", "[hhgttg]" )
+{
+    {
+      char str[] = "001122:33445566";
+      REQUIRE( containsChar(str, ':', 15) == 7 );
+    }
+
+    {
+      char str[] = "";
+      REQUIRE( containsChar(str, ':', 0) == -1 );
+    }
+
+    {
+      char str[] = "00112233445566";
+      REQUIRE( containsChar(str, ':', 14) == -1 );
+    }
+}

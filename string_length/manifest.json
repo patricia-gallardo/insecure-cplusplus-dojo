@@ -1,6 +1,6 @@
 
 {
-  "display_name": "CWE-121 and CWE-122: Array Bounds",
+  "display_name": "CWE-121, CWE-122 and CWE-124: Array Bounds",
 
   "visible_filenames": [
     "string_length.tests.cpp",
