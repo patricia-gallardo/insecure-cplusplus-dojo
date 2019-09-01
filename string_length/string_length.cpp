@@ -1,6 +1,6 @@
 #include "string_length.hpp"
 
-int stringLength(int size, const char *input) {
+int stringLength(int, const char *input) {
   return strlen(input);
 }
 
