@@ -11,7 +11,7 @@ CXXFLAGS += -Wunreachable-code
 
 # CXXFLAGS += -fprofile-arcs -ftest-coverage
 
-CXXFLAGS += -fsanitize=leak,address,undefined
+CXXFLAGS += -fsanitize=leak,address
 CXXFLAGS += -fno-sanitize-recover=all
 CXXFLAGS += -fno-omit-frame-pointer
 
