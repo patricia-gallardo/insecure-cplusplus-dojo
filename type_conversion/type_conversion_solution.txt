@@ -1,0 +1,3 @@
+uintptr_t pointer = (uintptr_t) ptr;
+
+https://en.cppreference.com/w/c/types/integer
