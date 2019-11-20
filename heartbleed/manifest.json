@@ -1,6 +1,6 @@
 
 {
-  "display_name": "Heartbleed",
+  "display_name": "CVE-2014-0160: Heartbleed",
 
   "visible_filenames": [
     "heartbleed.tests.cpp",
