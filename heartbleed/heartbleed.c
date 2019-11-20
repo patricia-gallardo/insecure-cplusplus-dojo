@@ -58,16 +58,17 @@ void OPENSSL_free(unsigned char *buffer) {
   free(buffer);
 }
 
-int RAND_pseudo_bytes(unsigned char *buf, int num) {}
+int RAND_pseudo_bytes(unsigned char *buf, int num) { return 42; }
 void dtls1_stop_timer(SSL *pSsl) {}
 
 int dtls1_write_bytes(SSL *s, int type, unsigned char *buf, int len, char ** response) {
   char * response_buf = malloc(len);
   memcpy(response_buf, buf, len);
+  *response = response_buf;
   return len;
 }
 
-char* dtls1_process_heartbeat(SSL *s, char ** response) {
+int dtls1_process_heartbeat(SSL *s, char ** response) {
   unsigned char *p = &s->s3->rrec.data[0], *pl;
   unsigned short hbtype;
   unsigned int payload;

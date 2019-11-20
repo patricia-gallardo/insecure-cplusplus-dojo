@@ -5,7 +5,7 @@ CXXFLAGS += -fprofile-arcs -ftest-coverage
 
 CFLAGS += -I.
 CFLAGS += -std=c11
-CFLAGS += -Wall -Wextra -Werror
+CFLAGS += -Wall -Wextra -Werror -Wno-unused-parameter -Wno-pointer-sign
 CFLAGS += -fprofile-arcs -ftest-coverage
 
 GTEST_LIBS = -lgtest -lgtest_main -pthread
