@@ -18,7 +18,7 @@ TEST(Heartbleed, Returns_the_buffer_on_valid_request)
     valid_request[3] = '\xde'; // Payload byte 0
     valid_request[4] = '\xad'; // Payload byte 1
     valid_request[5] = '\xbe'; // Payload byte 2
-    valid_request[6] = '\xef'; // Payload byte 4
+    valid_request[6] = '\xef'; // Payload byte 3
 
     char * response = NULL;
     ASSERT_EQ(0, heartbleed(valid_request, valid_len, &response));
