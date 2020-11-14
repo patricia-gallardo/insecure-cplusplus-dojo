@@ -1,1 +1,1 @@
-https://github.com/cyber-dojo/custom/blob/master/Yahtzee/C/yahtzee.c
+https://raw.githubusercontent.com/cyber-dojo-retired/starter-base/master/test_data/custom-yahtzee/C/yahtzee.c
