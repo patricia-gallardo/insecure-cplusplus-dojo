@@ -12,7 +12,7 @@ TEST(Heartbleed, Returns_the_buffer_on_valid_request)
     const int valid_len = 7;
 
     char valid_request[valid_len];
-    valid_request[0] = '\x01'; // Response type is 1
+    valid_request[0] = '\x01'; // Request type is 1
     valid_request[1] = '\x00'; // Size
     valid_request[2] = '\x07'; // Size = 7 bytes
     valid_request[3] = '\xde'; // Payload byte 0
