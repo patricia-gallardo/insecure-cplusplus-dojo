@@ -2,8 +2,21 @@
 #define YATZY_INCLUDED
 
 enum YatzyCategory {
-  Chance, Yatzy, Ones, Twos, Threes, Fours, Fives, Sixes, Pair, TwoPairs,
-  ThreeOfAKind, FourOfAKind, SmallStraight, LargeStraight, FullHouse
+  Chance,
+  Yatzy,
+  Ones,
+  Twos,
+  Threes,
+  Fours,
+  Fives,
+  Sixes,
+  Pair,
+  TwoPairs,
+  ThreeOfAKind,
+  FourOfAKind,
+  SmallStraight,
+  LargeStraight,
+  FullHouse
 };
 
 int answer(enum YatzyCategory category,
