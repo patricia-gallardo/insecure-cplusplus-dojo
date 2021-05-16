@@ -13,4 +13,3 @@ Task:
 CWE-190: Integer Overflow or Wraparound
 
 ---------------------
-Exercise 321: Overflow, Wrap or Truncate

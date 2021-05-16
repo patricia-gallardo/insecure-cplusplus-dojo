@@ -15,4 +15,3 @@ Task:
 CVE-2014-0160: Heartbleed
 
 ---------------------
-Exercise 151: Fix Heartbleed

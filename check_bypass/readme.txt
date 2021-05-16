@@ -15,4 +15,3 @@ CWE-190: Integer Overflow or Wraparound
 CWE-197: Numeric Truncation Error
 
 ---------------------
-Exercise 321: Overflow, Wrap or Truncate - CWE-190 and CWE-197: Bypassing Checks

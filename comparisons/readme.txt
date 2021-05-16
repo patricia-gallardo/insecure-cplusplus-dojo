@@ -15,4 +15,3 @@ Task:
 CWE-704: Incorrect Type Conversion or Cast
 
 ---------------------
-Exercise 322: Numeric Conversions - CWE-704: Unsigned/Signed Comparisons

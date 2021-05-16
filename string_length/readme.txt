@@ -17,4 +17,9 @@ Preserve the current behavior of the functions, even when it is strange, all
 tests should pass unaltered.
 
 ---------------------
-Exercise 431: Buffer Overflow - CWE-121, CWE-122 and CWE-124: Array Bounds
+
+CWE-121: Stack-based Buffer Overflow
+CWE-122: Heap-based Buffer Overflow
+CWE-124: Buffer Underwrite ('Buffer Underflow')
+
+---------------------
