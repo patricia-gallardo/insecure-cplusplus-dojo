@@ -10,4 +10,9 @@ Task:
   values that will bypass the if check in the functions in check_bypass.cpp.
 
 ---------------------
+
+CWE-190: Integer Overflow or Wraparound
+CWE-197: Numeric Truncation Error
+
+---------------------
 Exercise 321: Overflow, Wrap or Truncate - CWE-190 and CWE-197: Bypassing Checks

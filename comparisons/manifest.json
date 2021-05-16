@@ -1,6 +1,6 @@
 
 {
-  "display_name": "Ex 322: CWE-704 - Unsigned/Signed Comparisons",
+  "display_name": "Ex 322: Numeric Conversions",
 
   "visible_filenames": [
     "comparisons.tests.cpp",

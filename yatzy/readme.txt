@@ -1,4 +1,4 @@
-# Exercise 104: Try TurtleSec CyberDojo
+# Exercise 104: Warm-up - Yatzy in C
 
 Getting familiar with CyberDojo by scoring Yatzy.
 
