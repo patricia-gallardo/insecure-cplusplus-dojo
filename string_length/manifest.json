@@ -1,6 +1,6 @@
 
 {
-  "display_name": "Exercise 431: Buffer Overflow",
+  "display_name": "Ex 431: Buffer Overflow",
 
   "visible_filenames": [
     "string_length.tests.cpp",

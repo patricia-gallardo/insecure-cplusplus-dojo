@@ -1,6 +1,6 @@
 
 {
-  "display_name": "Ex 433: CWE-415 and CWE-416 - Free In Error Path",
+  "display_name": "Ex 433: Free In Error Path",
 
   "visible_filenames": [
     "free_use.tests.cpp",

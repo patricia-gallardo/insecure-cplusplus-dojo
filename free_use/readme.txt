@@ -9,4 +9,8 @@ A) the memory errors will trigger in the test
 B) a warning will be issued so that the fallthrough is detected
 
 ---------------------
-Exercise 433: Free In Error Path - CWE-415 and CWE-416
+
+CWE-415: Double Free
+CWE-416: Use After Free
+
+---------------------
