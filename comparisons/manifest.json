@@ -1,5 +1,7 @@
+
 {
   "display_name": "CWE-704: Unsigned/Signed Comparisons",
+
   "visible_filenames": [
     "comparisons.tests.cpp",
     "comparisons.cpp",
@@ -8,14 +10,12 @@
     "cyber-dojo.sh",
     "readme.txt"
   ],
-  "hidden_filenames": [
-    ".*\\.gcov",
-    ".*\\.gcno"
-  ],
+
+  "hidden_filenames": [ ".*\\.gcov", ".*\\.gcno" ],
+
   "image_name": "cyberdojofoundation/clangpp_catch",
+
   "max_seconds": 20,
-  "filename_extension": [
-    ".cpp",
-    ".hpp"
-  ]
+
+  "filename_extension": [ ".cpp", ".hpp" ]
 }

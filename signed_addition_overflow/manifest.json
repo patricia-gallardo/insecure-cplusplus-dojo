@@ -1,5 +1,7 @@
+
 {
   "display_name": "CWE-190: Signed Integer Addition Overflow",
+
   "visible_filenames": [
     "signed_overflow.tests.cpp",
     "signed_overflow.cpp",
@@ -8,14 +10,12 @@
     "cyber-dojo.sh",
     "readme.txt"
   ],
-  "hidden_filenames": [
-    ".*\\.gcov",
-    ".*\\.gcno"
-  ],
+
+  "hidden_filenames": [ ".*\\.gcov", ".*\\.gcno" ],
+
   "image_name": "cyberdojofoundation/clangpp_catch",
+
   "max_seconds": 20,
-  "filename_extension": [
-    ".cpp",
-    ".hpp"
-  ]
+
+  "filename_extension": [ ".cpp", ".hpp" ]
 }

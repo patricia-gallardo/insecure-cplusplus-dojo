@@ -4,27 +4,28 @@
 #include "comparisons.hpp"
 #include <catch2/catch.hpp>
 
-TEST_CASE("CWE-704: Unsigned/Signed Comparisons", "[hhgttg]") {
-  // Is 1 greater than -1?
-  // ---------------------
+TEST_CASE( "CWE-704: Unsigned/Signed Comparisons", "[hhgttg]" )
+{
+    // Is 1 greater than -1?
+    // ---------------------
 
-  // REQUIRE( static_cast<unsigned int>(int(-1))            == GUESS_FIRST );
+    //REQUIRE( static_cast<unsigned int>(int(-1))            == GUESS_FIRST );
 
-  // REQUIRE( static_cast<unsigned long>(long(-1))          == GUESS_FIRST );
+    //REQUIRE( static_cast<unsigned long>(long(-1))          == GUESS_FIRST );
 
-  // REQUIRE( static_cast<int>((unsigned short) 1)          == GUESS_FIRST );
+    //REQUIRE( static_cast<int>((unsigned short) 1)          == GUESS_FIRST );
 
-  // REQUIRE( static_cast<int>(short(-1))                   == GUESS_FIRST );
+    //REQUIRE( static_cast<int>(short(-1))                   == GUESS_FIRST );
 
-  // REQUIRE( static_cast<long>((unsigned int) 1)           == GUESS_FIRST );
+    //REQUIRE( static_cast<long>((unsigned int) 1)           == GUESS_FIRST );
 
-  // REQUIRE( isGreater_ui_i((unsigned int)   1, int(-1))   == GUESS_FIRST );
+    //REQUIRE( isGreater_ui_i((unsigned int)   1, int(-1))   == GUESS_FIRST );
 
-  // REQUIRE( isGreater_ul_l((unsigned long)  1, long(-1))  == GUESS_FIRST );
+    //REQUIRE( isGreater_ul_l((unsigned long)  1, long(-1))  == GUESS_FIRST );
 
-  // REQUIRE( isGreater_us_s((unsigned short) 1, short(-1)) == GUESS_FIRST );
+    //REQUIRE( isGreater_us_s((unsigned short) 1, short(-1)) == GUESS_FIRST );
 
-  // REQUIRE( isGreater_us_i((unsigned short) 1, int(-1))   == GUESS_FIRST );
+    //REQUIRE( isGreater_us_i((unsigned short) 1, int(-1))   == GUESS_FIRST );
 
-  // REQUIRE( isGreater_ui_l((unsigned int)   1, long(-1))  == GUESS_FIRST );
+    //REQUIRE( isGreater_ui_l((unsigned int)   1, long(-1))  == GUESS_FIRST );
 }

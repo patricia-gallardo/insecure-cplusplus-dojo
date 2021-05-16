@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-char * make_buffer(int number) {
-  char * buffer = (char *)malloc(256);
+char *make_buffer(int number) {
+  char *buffer = (char *) malloc(256);
   memset(buffer, 0, 256);
 
   switch (number) {
