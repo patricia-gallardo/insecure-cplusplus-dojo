@@ -1,4 +1,4 @@
-# Fixing Heartbleed
+# Exercise 151: Fix Heartbleed
 
 Here we will be fixing the code behind Heartbleed.
 
@@ -9,3 +9,6 @@ Task:
 
 * Remove the ifdef that disables the last two tests.
 * Make all the tests pass.
+
+---------------------
+Exercise 151: Fix Heartbleed - CVE-2014-0160: Heartbleed
