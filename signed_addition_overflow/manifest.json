@@ -1,6 +1,6 @@
 
 {
-  "display_name": "Ex 321: CWE-190 - Signed Integer Overflow",
+  "display_name": "Ex 321: Signed Integer Addition Overflow",
 
   "visible_filenames": [
     "signed_overflow.tests.cpp",
