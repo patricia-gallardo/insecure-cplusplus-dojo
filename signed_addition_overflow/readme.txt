@@ -9,4 +9,4 @@ Task:
   any warnings or sanitizers.
 
 ---------------------
-Exercise 321: Overflow, Wrap or Truncate - CWE-190: Signed Integer Addition Overflow
+Exercise 321: Overflow, Wrap or Truncate - CWE-190: Signed Integer Overflow
