@@ -1,7 +1,5 @@
-
 {
   "display_name": "CWE-704: Incorrect Type Conversion",
-
   "visible_filenames": [
     "type_conversion.tests.cpp",
     "type_conversion.c",
@@ -10,12 +8,15 @@
     "cyber-dojo.sh",
     "readme.txt"
   ],
-
-  "hidden_filenames": [ ".*\\.gcov", ".*\\.gcno" ],
-
+  "hidden_filenames": [
+    ".*\\.gcov",
+    ".*\\.gcno"
+  ],
   "image_name": "cyberdojofoundation/gcc_googletest",
-
   "max_seconds": 20,
-
-  "filename_extension": [ ".c", ".h", ".cpp" ]
+  "filename_extension": [
+    ".c",
+    ".h",
+    ".cpp"
+  ]
 }

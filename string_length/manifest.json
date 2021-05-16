@@ -1,7 +1,5 @@
-
 {
   "display_name": "CWE-121, CWE-122 and CWE-124: Array Bounds",
-
   "visible_filenames": [
     "string_length.tests.cpp",
     "string_length.cpp",
@@ -10,12 +8,14 @@
     "cyber-dojo.sh",
     "readme.txt"
   ],
-
-  "hidden_filenames": [ ".*\\.gcov", ".*\\.gcno" ],
-
+  "hidden_filenames": [
+    ".*\\.gcov",
+    ".*\\.gcno"
+  ],
   "image_name": "cyberdojofoundation/clangpp_catch",
-
   "max_seconds": 20,
-
-  "filename_extension": [ ".cpp", ".hpp" ]
+  "filename_extension": [
+    ".cpp",
+    ".hpp"
+  ]
 }

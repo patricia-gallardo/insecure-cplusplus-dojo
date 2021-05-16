@@ -1,7 +1,5 @@
-
 {
   "display_name": "CWE-190 and CWE-197: Bypassing Checks",
-
   "visible_filenames": [
     "check_bypass.tests.cpp",
     "check_bypass.cpp",
@@ -10,12 +8,14 @@
     "cyber-dojo.sh",
     "readme.txt"
   ],
-
-  "hidden_filenames": [ ".*\\.gcov", ".*\\.gcno" ],
-
+  "hidden_filenames": [
+    ".*\\.gcov",
+    ".*\\.gcno"
+  ],
   "image_name": "cyberdojofoundation/clangpp_catch",
-
   "max_seconds": 20,
-
-  "filename_extension": [ ".cpp", ".hpp" ]
+  "filename_extension": [
+    ".cpp",
+    ".hpp"
+  ]
 }
