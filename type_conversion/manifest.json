@@ -1,6 +1,6 @@
 
 {
-  "display_name": "CWE-704: Incorrect Type Conversion",
+  "display_name": "Ex 324: CWE-704 - Incorrect Type Conversion",
 
   "visible_filenames": [
     "type_conversion.tests.cpp",
