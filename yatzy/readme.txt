@@ -2,6 +2,8 @@
 
 Getting familiar with CyberDojo by scoring Yatzy.
 
+Task:
+
 The game of yatzy is a simple dice game. Each player
 rolls five six-sided dice. The player places the roll in
 a category, such as ones, twos, fives, pair, two pairs
