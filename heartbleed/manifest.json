@@ -1,6 +1,6 @@
 
 {
-  "display_name": "Ex 151: Fix Heartbleed - CVE-2014-0160",
+  "display_name": "Ex 151: Fix Heartbleed",
 
   "visible_filenames": [
     "heartbleed.tests.cpp",

@@ -11,4 +11,8 @@ Task:
 * Make all the tests pass.
 
 ---------------------
-Exercise 151: Fix Heartbleed - CVE-2014-0160: Heartbleed
+
+CVE-2014-0160: Heartbleed
+
+---------------------
+Exercise 151: Fix Heartbleed
