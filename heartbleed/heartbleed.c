@@ -132,7 +132,7 @@ int dtls1_process_heartbeat(SSL *s, char ** response) {
   return 0;
 }
 
-int heartbleed(char * request, int len, char ** response) {
+int heartbleed(unsigned char * request, int len, char ** response) {
   SSL s;
   s.s3 = malloc(sizeof(S3));
   s.s3->rrec.data = request;
