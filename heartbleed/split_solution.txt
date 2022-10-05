@@ -1,5 +1,24 @@
 // sudo apt-get install libgtest-dev
 
+  // Give meaningful names
+  int header_length = 1 + 2;
+  int footer_length = padding;
+  int message_length = s->s3->rrec.length;
+
+  // Check that the message can accomodate at least the header and footer
+  if (header_length + footer_length > message_length)
+    return 0;
+
+  /* Read type and payload length first */
+  hbtype = *p++;
+  n2s(p, payload);
+  pl = p;
+
+  // Check that the message can accommodate the added payload
+  if (header_length + payload + footer_length > message_length)
+    return 0;
+
+
 /**
  * The below are simulations of the affected function in the HeartBleed vulnerability
  * They are from the following source repos:
