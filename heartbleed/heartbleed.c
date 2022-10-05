@@ -1,6 +1,5 @@
 #include "heartbleed.h"
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -132,9 +131,15 @@ int dtls1_process_heartbeat(SSL *s, char ** response) {
   return 0;
 }
 
+#define RAII(func) __attribute__((cleanup(func)))
+static void free_s3(S3 ** s3) {
+  free(*s3);
+}
+
 int heartbleed(unsigned char * request, int len, char ** response) {
   SSL s;
-  s.s3 = malloc(sizeof(S3));
+  RAII(free_s3) S3 * s3 = malloc(sizeof(S3));
+  s.s3 = s3;
   s.s3->rrec.data = request;
   s.s3->rrec.length = len;
   s.msg_callback = NULL;
