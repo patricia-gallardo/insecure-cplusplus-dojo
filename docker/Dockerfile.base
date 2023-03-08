@@ -1,4 +1,4 @@
-FROM cyberdojofoundation/clangplusplus:ee058a5
+FROM cyberdojofoundation/clangplusplus
 LABEL maintainer=jon@jaggersoft.com
 
 COPY catch_main.cpp /usr/src
