@@ -11,5 +11,6 @@ curl \
 
 apt-get remove --yes curl
 cd /usr/src
+apt-get install --yes clang
 clang++ -fPIC -Wall -c catch_main.cpp
 mv /usr/src/catch_main.o /usr/lib
