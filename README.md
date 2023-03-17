@@ -6,5 +6,5 @@
 * Exercise 321: Will the signed integer addition overflow? [CWE-190: Signed Integer Addition Overflow](signed_addition_overflow/readme.txt)
 * Exercise 433: Free In Error Path [CWE-415 and CWE-416: Free In Error Path](free_use/readme.txt)
 * Exercise 324: Incorrect Type Conversion [CWE-704: Incorrect Type Conversion](type_conversion/readme.txt)
-* [CWE-704: Unsigned/Signed Comparisons](comparisons/readme.txt)
+* Exercise 322: Numeric Conversions [CWE-704: Unsigned/Signed Comparisons](comparisons/readme.txt)
 * [Yatzy in C](yatzy/readme.txt)
