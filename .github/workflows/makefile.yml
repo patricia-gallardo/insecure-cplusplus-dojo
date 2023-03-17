@@ -29,9 +29,9 @@ jobs:
         working-directory: free_use
         run: make
 
-#      - name: Make heartbleed
-#        working-directory: heartbleed
-#        run: make
+      - name: Make heartbleed
+        working-directory: heartbleed
+        run: make
 
       - name: Make signed_addition_overflow
         working-directory: signed_addition_overflow
