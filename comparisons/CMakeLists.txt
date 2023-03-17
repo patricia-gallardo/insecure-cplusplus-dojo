@@ -1,7 +1,7 @@
 find_package(Catch2 CONFIG REQUIRED)
 
 file(GLOB sources CONFIGURE_DEPENDS "*.cpp")
-add_executable(comparisons ${sources})
+add_executable(comparisons ${sources} cmake/tests.cpp)
 target_link_libraries(comparisons PRIVATE Catch2::Catch2)
 
 include(Catch)
