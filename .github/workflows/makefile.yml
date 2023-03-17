@@ -20,3 +20,31 @@ jobs:
       - name: Make check_bypass
         working-directory: check_bypass
         run: make
+
+      - name: Make comparisons
+        working-directory: comparisons
+        run: make
+
+      - name: Make free_use
+        working-directory: free_use
+        run: make
+
+      - name: Make heartbleed
+        working-directory: heartbleed
+        run: make
+
+      - name: Make signed_addition_overflow
+        working-directory: signed_addition_overflow
+        run: make
+
+      - name: Make string_length
+        working-directory: string_length
+        run: make
+
+      - name: Make type_conversion
+        working-directory: type_conversion
+        run: make
+
+      - name: Make yatzy
+        working-directory: yatzy
+        run: make
