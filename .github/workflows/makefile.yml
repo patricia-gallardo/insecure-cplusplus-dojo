@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install dependencies
-        run: cd docker/ && sudo bash install.sh
+        run: cd docker/ && sudo cp catch_main.cpp /usr/src/ && sudo bash install.sh
 
       - name: Make check_bypass
         working-directory: check_bypass
