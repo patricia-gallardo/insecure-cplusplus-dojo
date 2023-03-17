@@ -1,5 +1,7 @@
 # insecure-cplusplus-dojo
 
+[![CMake](https://github.com/patricia-gallardo/insecure-cplusplus-dojo/actions/workflows/cmake.yml/badge.svg)](https://github.com/patricia-gallardo/insecure-cplusplus-dojo/actions/workflows/cmake.yml)
+
 * Exercise 104: Warm-up - Yatzy in C [Yatzy in C](yatzy/readme.txt)
 * Exercise 151: Fix Heartbleed [CVE-2014-0160: Heartbleed](heartbleed/readme.txt)
 * Exercise 321: Bypassing checks through attacker controlled numbers [CWE-190 and CWE-197: Bypassing Checks](check_bypass/readme.txt)
