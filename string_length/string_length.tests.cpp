@@ -9,7 +9,7 @@
 #define CWE121_3
 //#define CWE121_4
 
-TEST_CASE("CWE-121: Access Outside Array Bounds", "[hhgttg]") {
+TEST_CASE("CWE-121: Access Outside Array Bounds", "[Ex431]") {
 #ifdef CWE121_1
   // Null terminated string
   char str[] = "00112233445566";
@@ -38,7 +38,7 @@ TEST_CASE("CWE-121: Access Outside Array Bounds", "[hhgttg]") {
 //#define CWE122_1
 //#define CWE122_2
 
-TEST_CASE("CWE-122: Write Outside Heap Array Bounds", "[hhgttg]") {
+TEST_CASE("CWE-122: Write Outside Heap Array Bounds", "[Ex431]") {
 #if defined(CWE122_1) || defined(CWE122_2)
   // Null terminated string
   char str[] = "00112233445566";
@@ -67,7 +67,7 @@ TEST_CASE("CWE-122: Write Outside Heap Array Bounds", "[hhgttg]") {
 //#define CWE124_2
 //#define CWE124_3
 
-TEST_CASE("CWE-124: Write Before Array Bounds", "[hhgttg]") {
+TEST_CASE("CWE-124: Write Before Array Bounds", "[Ex431]") {
 #ifdef CWE124_1
   {
     char str[] = "001122:33445566";

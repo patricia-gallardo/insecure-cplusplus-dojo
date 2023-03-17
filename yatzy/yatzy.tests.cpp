@@ -4,7 +4,7 @@ extern "C" {
 #include "yatzy.h"
 }
 
-TEST_CASE("Yatzy: Scoring throws in yatzy categories", "[hhgttg]") {
+TEST_CASE("Yatzy: Scoring throws in yatzy categories", "[Ex104]") {
   REQUIRE(14 == answer(Chance, 1, 1, 3, 3, 6));
   // REQUIRE(21 == answer(Chance, 4,5,5,6,1));
 

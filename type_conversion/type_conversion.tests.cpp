@@ -5,7 +5,7 @@ extern "C" {
 }
 
 // CWE-704: Incorrect Type Conversion
-TEST_CASE("CWE-704: Incorrect Type Conversion", "[hhgttg]") {
+TEST_CASE("CWE-704: Incorrect Type Conversion", "[Ex324]") {
   int value = 0;
   int * ptr = &value;
 #if 0

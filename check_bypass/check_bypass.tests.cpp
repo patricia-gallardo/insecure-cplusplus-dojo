@@ -4,7 +4,7 @@
 #include "check_bypass.hpp"
 #include <catch2/catch.hpp>
 
-TEST_CASE("CWE-190: Integer Overflow or Wraparound", "[hhgttg]") {
+TEST_CASE("CWE-190: Integer Overflow or Wraparound", "[Ex321]") {
   // Unsigned : Small enough
   REQUIRE(bypassedCheckUnsigned(42, 42));
   // Unsigned : Too big
@@ -26,7 +26,7 @@ TEST_CASE("CWE-190: Integer Overflow or Wraparound", "[hhgttg]") {
   // --------------------------------------------
 }
 
-TEST_CASE("CWE-197: Numeric Truncation Error", "[hhgttg]") {
+TEST_CASE("CWE-197: Numeric Truncation Error", "[Ex321]") {
   // Truncated : Small enough
   REQUIRE(bypassedCheckTruncated(42, 42));
   // Truncated : Too big

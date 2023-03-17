@@ -4,7 +4,7 @@
 #include "comparisons.hpp"
 #include <catch2/catch.hpp>
 
-TEST_CASE("CWE-704: Unsigned/Signed Comparisons", "[hhgttg]") {
+TEST_CASE("CWE-704: Unsigned/Signed Comparisons", "[Ex322]") {
   // Is 1 greater than -1?
   // ---------------------
 

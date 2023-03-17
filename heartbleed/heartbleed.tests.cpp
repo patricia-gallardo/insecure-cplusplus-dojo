@@ -4,7 +4,7 @@ extern "C" {
 #include "heartbleed.h"
 }
 
-TEST_CASE("Heartbleed: Returns the buffer on valid_request", "[hhgttg]") {
+TEST_CASE("Heartbleed: Returns the buffer on valid_request", "[Ex151]") {
 
   const int request_type_len = 1;
   const int size_len = 2;
@@ -45,7 +45,7 @@ TEST_CASE("Heartbleed: Returns the buffer on valid_request", "[hhgttg]") {
 }
 
 #if 0
-TEST_CASE("Heartbleed: Does not leak info small", "[hhgttg]") {
+TEST_CASE("Heartbleed: Does not leak info small", "[Ex151]") {
 
   unsigned char short_request[] = "\x01\x01\xfd\x00";
   int short_len = sizeof(short_request)/sizeof(short_request[0]);
@@ -56,7 +56,7 @@ TEST_CASE("Heartbleed: Does not leak info small", "[hhgttg]") {
     REQUIRE(nullptr == response);
 }
 
-TEST_CASE("Heartbleed: Does not leak info large", "[hhgttg]") {
+TEST_CASE("Heartbleed: Does not leak info large", "[Ex151]") {
 
   unsigned char long_request[] = "\x01\x01\xfd\xde\xad\xbe\xef\xde\xad\xbe\xef\xde\xad\xbe\xef\xde\xad\xbe\xef\x00";
   int long_len = sizeof(long_request)/sizeof(long_request[0]);
