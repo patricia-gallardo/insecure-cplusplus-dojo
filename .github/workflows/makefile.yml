@@ -16,7 +16,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: docker
-        run: ./install.sh
+        run: sudo ./install.sh
 
       - name: Make check_bypass
         working-directory: check_bypass
