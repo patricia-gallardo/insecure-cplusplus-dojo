@@ -8,6 +8,7 @@ CXXFLAGS += -O
 CXXFLAGS += -Wsequence-point
 CXXFLAGS += -Wmissing-noreturn
 CXXFLAGS += -Wunreachable-code
+CXXFLAGS += -g3
 
 # CXXFLAGS += -fprofile-arcs -ftest-coverage
 
