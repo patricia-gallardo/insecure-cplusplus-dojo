@@ -1,6 +1,7 @@
 # insecure-cplusplus-dojo
 
 [![CMake](https://github.com/patricia-gallardo/insecure-cplusplus-dojo/actions/workflows/cmake.yml/badge.svg)](https://github.com/patricia-gallardo/insecure-cplusplus-dojo/actions/workflows/cmake.yml)
+[![Makefile](https://github.com/patricia-gallardo/insecure-cplusplus-dojo/actions/workflows/makefile.yml/badge.svg)](https://github.com/patricia-gallardo/insecure-cplusplus-dojo/actions/workflows/makefile.yml)
 
 * Exercise 104: Warm-up - Yatzy in C [Yatzy in C](yatzy/readme.txt)
 * Exercise 151: Fix Heartbleed [CVE-2014-0160: Heartbleed](heartbleed/readme.txt)
