@@ -1,19 +1,15 @@
 CXXFLAGS += -I.
 CXXFLAGS += -std=c++17
 CXXFLAGS += -Wall -Wextra
-CXXFLAGS += -fprofile-arcs -ftest-coverage
 
 CFLAGS += -I.
 CFLAGS += -std=c11
 CFLAGS += -Wall -Wextra -Werror
-CFLAGS += -fprofile-arcs -ftest-coverage
-
-GTEST_LIBS = -lgtest -lgtest_main -pthread
 
 HPP_FILES = $(wildcard *.hpp)
 COMPILED_HPP_FILES = $(patsubst %.hpp,%.compiled_hpp,$(HPP_FILES))
 CPP_FILES = $(wildcard *.cpp)
-COMPILED_CPP_FILES = $(patsubst %.cpp,%.o,$(CPP_FILES))
+COMPILED_CPP_FILES = $(patsubst %.cpp,%.o,$(CPP_FILES)) /usr/lib/catch_main.o
 
 H_FILES = $(wildcard *.h)
 COMPILED_H_FILES = $(patsubst %.h,%.compiled_h,$(H_FILES))
@@ -22,10 +18,10 @@ COMPILED_C_FILES = $(patsubst %.c,%.o,$(C_FILES))
 
 .PHONY: test.output
 test.output: test makefile
-	@./$< --gtest_shuffle
+	@./$<
 
 test: makefile $(COMPILED_CPP_FILES) $(COMPILED_C_FILES) $(COMPILED_HPP_FILES)
-	@$(CXX) $(CXXFLAGS) -O $(COMPILED_CPP_FILES) $(COMPILED_C_FILES) $(GTEST_LIBS) -o $@
+	@$(CXX) $(CXXFLAGS) -O $(COMPILED_CPP_FILES) $(COMPILED_C_FILES) -o $@
 
 %.o: %.cpp
 	@$(CXX) -c $(CXXFLAGS) -O $< -o $@
