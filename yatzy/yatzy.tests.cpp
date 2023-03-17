@@ -1,61 +1,59 @@
-#include <gtest/gtest.h>
+#include <catch2/catch.hpp>
 
 extern "C" {
 #include "yatzy.h"
 }
 
-using namespace ::testing;
+TEST_CASE("Yatzy: Scoring throws in yatzy categories", "[hhgttg]") {
+  REQUIRE(14 == answer(Chance, 1, 1, 3, 3, 6));
+  // REQUIRE(21 == answer(Chance, 4,5,5,6,1));
 
-TEST(Yatzy, Scoring_throws_in_yatzy_categories) {
-  ASSERT_EQ(14, answer(Chance, 1, 1, 3, 3, 6));
-  // ASSERT_EQ(21, answer(Chance, 4,5,5,6,1));
+  REQUIRE(50 == answer(Yatzy, 1, 1, 1, 1, 1));
+  REQUIRE(50 == answer(Yatzy, 5, 5, 5, 5, 5));
+  // REQUIRE(0,  answer(Yatzy, 1,1,1,2,1));
 
-  ASSERT_EQ(50, answer(Yatzy, 1, 1, 1, 1, 1));
-  ASSERT_EQ(50, answer(Yatzy, 5, 5, 5, 5, 5));
-  // ASSERT_EQ(0,  answer(Yatzy, 1,1,1,2,1));
+  REQUIRE(1 == answer(Ones, 1, 3, 3, 4, 5));
+  // REQUIRE(0 == answer(Ones, 2,3,3,4,5));
 
-  ASSERT_EQ(1, answer(Ones, 1, 3, 3, 4, 5));
-  // ASSERT_EQ(0, answer(Ones, 2,3,3,4,5));
+  REQUIRE(4 == answer(Twos, 2, 3, 2, 5, 1));
+  // REQUIRE(0 == answer(Twos, 1,3,1,5,1));
 
-  ASSERT_EQ(4, answer(Twos, 2, 3, 2, 5, 1));
-  // ASSERT_EQ(0, answer(Twos, 1,3,1,5,1));
+  REQUIRE(6 == answer(Threes, 2, 3, 3, 5, 1));
+  // REQUIRE(0 == answer(Threes, 2,2,2,5,1));
 
-  ASSERT_EQ(6, answer(Threes, 2, 3, 3, 5, 1));
-  // ASSERT_EQ(0, answer(Threes, 2,2,2,5,1));
+  REQUIRE(8 == answer(Fours, 1, 1, 2, 4, 4));
+  // REQUIRE(0 == answer(Fours, 1,1,2,3,3));
 
-  ASSERT_EQ(8, answer(Fours, 1, 1, 2, 4, 4));
-  // ASSERT_EQ(0, answer(Fours, 1,1,2,3,3));
+  REQUIRE(10 == answer(Fives, 1, 1, 2, 5, 5));
+  // REQUIRE(0 == answer(Fives, 1,1,2,4,4));
 
-  ASSERT_EQ(10, answer(Fives, 1, 1, 2, 5, 5));
-  // ASSERT_EQ(0, answer(Fives, 1,1,2,4,4));
+  REQUIRE(18 == answer(Sixes, 6, 6, 6, 1, 5));
+  // REQUIRE(0 == answer(Sixes, 5,5,5,1,5));
 
-  ASSERT_EQ(18, answer(Sixes, 6, 6, 6, 1, 5));
-  // ASSERT_EQ(0, answer(Sixes, 5,5,5,1,5));
+  REQUIRE(8 == answer(Pair, 3, 3, 3, 4, 4));
+  // REQUIRE(12 == answer(Pair, 1,1,6,2,6));
+  // REQUIRE(0 == answer(Pair, 3,3,3,4,1));
+  // REQUIRE(0 == answer(Pair, 3,3,3,3,1));
 
-  ASSERT_EQ(8, answer(Pair, 3, 3, 3, 4, 4));
-  // ASSERT_EQ(12, answer(Pair, 1,1,6,2,6));
-  // ASSERT_EQ(0, answer(Pair, 3,3,3,4,1));
-  // ASSERT_EQ(0, answer(Pair, 3,3,3,3,1));
+  REQUIRE(8 == answer(TwoPairs, 1, 1, 2, 3, 3));
+  // REQUIRE(0 == answer(TwoPairs, 1,1,2,3,4));
+  // REQUIRE(0 == answer(TwoPairs, 1,1,2,2,2));
 
-  ASSERT_EQ(8, answer(TwoPairs, 1, 1, 2, 3, 3));
-  // ASSERT_EQ(0, answer(TwoPairs, 1,1,2,3,4));
-  // ASSERT_EQ(0, answer(TwoPairs, 1,1,2,2,2));
+  REQUIRE(9 == answer(ThreeOfAKind, 3, 3, 3, 4, 5));
+  // REQUIRE(0 == answer(ThreeOfAKind, 3,3,4,5,6));
+  // REQUIRE(0 == answer(ThreeOfAKind, 3,3,3,3,1));
 
-  ASSERT_EQ(9, answer(ThreeOfAKind, 3, 3, 3, 4, 5));
-  // ASSERT_EQ(0, answer(ThreeOfAKind, 3,3,4,5,6));
-  // ASSERT_EQ(0, answer(ThreeOfAKind, 3,3,3,3,1));
+  REQUIRE(8 == answer(FourOfAKind, 2, 2, 2, 2, 5));
+  // REQUIRE(0 == answer(FourOfAKind, 2,2,2,5,5));
+  // REQUIRE(0 == answer(FourOfAKind, 2,2,2,2,2));
 
-  ASSERT_EQ(8, answer(FourOfAKind, 2, 2, 2, 2, 5));
-  // ASSERT_EQ(0, answer(FourOfAKind, 2,2,2,5,5));
-  // ASSERT_EQ(0, answer(FourOfAKind, 2,2,2,2,2));
+  REQUIRE(15 == answer(SmallStraight, 1, 2, 3, 4, 5));
+  // REQUIRE(0 == answer(SmallStraight, 2,2,2,2,5));
 
-  ASSERT_EQ(15, answer(SmallStraight, 1, 2, 3, 4, 5));
-  // ASSERT_EQ(0, answer(SmallStraight, 2,2,2,2,5));
+  REQUIRE(20 == answer(LargeStraight, 2, 3, 4, 5, 6));
+  // REQUIRE(0 == answer(LargeStraight, 2,2,2,2,2));
 
-  ASSERT_EQ(20, answer(LargeStraight, 2, 3, 4, 5, 6));
-  // ASSERT_EQ(0, answer(LargeStraight, 2,2,2,2,2));
-
-  ASSERT_EQ(8, answer(FullHouse, 1, 1, 2, 2, 2));
-  // ASSERT_EQ(0, answer(FullHouse, 2,2,3,3,4));
-  // ASSERT_EQ(0, answer(FullHouse, 4,4,4,4,4));
+  REQUIRE(8 == answer(FullHouse, 1, 1, 2, 2, 2));
+  // REQUIRE(0 == answer(FullHouse, 2,2,3,3,4));
+  // REQUIRE(0 == answer(FullHouse, 4,4,4,4,4));
 }

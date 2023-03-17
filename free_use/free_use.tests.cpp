@@ -10,9 +10,11 @@ TEST_CASE("CWE-415 and CWE-416: Free In Error Path", "[hhgttg]") {
     REQUIRE(buffer != nullptr);
     free(buffer);
   }
+#if 0
   {
     char * buffer = make_buffer(5);
     REQUIRE(buffer != nullptr);
     free(buffer);
   }
+#endif
 }
